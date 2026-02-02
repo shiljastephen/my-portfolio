@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #0b8189;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  padding: 12px;
+
+}
+
+.links a:hover {
+  color: #38bdf8;
+}
+.socials a {
+  margin-left: 15px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #38bdf8;
+}
