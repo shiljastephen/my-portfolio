@@ -17,16 +17,16 @@ function Projects() {
             View Code
           </a>
         </div>
-
-        <div className="project-card" data-aos="zoom-in">
-          <img src={ecommerceImg} alt="E-commerce App" />
-          <h3>E-Commerce Web App</h3>
-          <p>Full-stack shopping application with cart, product management, and order placement.</p>
-          <a href="https://github.com/YOUR_USERNAME/ecommerce-project" target="_blank" rel="noreferrer">
-            View Code
-          </a>
+        <div className="projects-container">
+         <div className="project-card" data-aos="zoom-in">
+           <img src={ecommerceImg} alt="E-commerce App" />
+           <h3>E-Commerce Web App</h3>
+           <p>Full-stack shopping application with cart, product management, and order placement.</p>
+           <a href="https://github.com/YOUR_USERNAME/ecommerce-project" target="_blank" rel="noreferrer">
+             View Project
+           </a>
+          </div>
         </div>
-
       </div>
     </section>
   );

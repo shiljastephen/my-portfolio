@@ -1,33 +1,51 @@
-.project-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.projects-container {
+  display: flex;
   gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
 .project-card {
-  background: #1e293b;
-  padding: 20px;
+  background: white;
+  width: 300px;
   border-radius: 12px;
-  transition: 0.3s;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
+
 .project-card img {
   width: 100%;
+  height: 180px;
+  object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 15px;
+}
+
+/* ✨ HOVER EFFECT */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.project-card h3 {
+  margin-top: 15px;
 }
 
 .project-card a {
   display: inline-block;
   margin-top: 10px;
-  color: #38bdf8;
-  font-weight: 600;
+  padding: 8px 14px;
+  background: #070d49;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s;
 }
 
-.project-card:hover {
-  transform: scale(1.03);
-}
-
-.project-card h3 {
-  color: #38bdf8;
-  margin-bottom: 10px;
+.project-card a:hover {
+  background: #72e1d8;
+  color: #070d49;
 }
