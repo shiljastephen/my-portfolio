@@ -1,13 +1,22 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 10px 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
 .projects-container {
   display: flex;
-  gap: 25px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 10px 10px;
 }
 
 .project-card {
-  background: white;
+  background: rgb(177, 208, 212);
   width: 300px;
   border-radius: 12px;
   padding: 20px;
@@ -32,14 +41,19 @@
 
 .project-card h3 {
   margin-top: 15px;
+  color: #070d49;
 }
-
+.project-card p {
+  font-size: 14px;
+  color: #042e42;
+  margin: 10px 0;
+}
 .project-card a {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 14px;
   background: #070d49;
-  color: white;
+  color: rgb(252, 247, 247);
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.3s;

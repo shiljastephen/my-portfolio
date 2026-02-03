@@ -34,3 +34,16 @@
 .socials a:hover {
   color: #38bdf8;
 }
+.dark-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  margin-left: 12px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.dark-btn:hover {
+  transform: scale(1.2);
+}
