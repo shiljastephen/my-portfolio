@@ -1,18 +1,31 @@
-.dark-mode {
+/* 🌙 DARK MODE GLOBAL */
+body.dark-mode {
   background-color: #0f172a;
   color: white;
 }
 
-.dark-mode .nav {
+/* Navbar */
+body.dark-mode .nav {
   background: #1e293b;
 }
 
-.dark-mode .card,
-.dark-mode .project-card {
+/* Links */
+body.dark-mode .links a {
+  color: white;
+}
+
+body.dark-mode .links a:hover {
+  color: #72e1d8;
+}
+
+/* Cards */
+body.dark-mode .card,
+body.dark-mode .project-card {
   background-color: #1e293b;
   color: white;
 }
 
-.dark-mode a {
-  color: #72e1d8;
+/* Skill bars background */
+body.dark-mode .skill-bar {
+  background: #334155;
 }

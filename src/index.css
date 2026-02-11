@@ -6,16 +6,42 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #014855;
-  color: white;
-
+  background: #7af3c2;
+  color: #041640;  
+  transition: background 0.4s, color 0.3s;
 }
 
 a {
   text-decoration: none;
   color: white;
 }
-
 section {
   padding: 80px 10%;
+}
+/* 🌙 DARK MODE */
+body.dark-mode {
+  background: #02272d;
+  color: #f9f4f4;
+}
+
+/* Navbar */
+body.dark-mode .nav {
+  background: #012f45;
+}
+
+/* Links */
+body.dark-mode a {
+  color: #72e1d8;
+}
+
+/* Cards */
+body.dark-mode .card,
+body.dark-mode .project-card {
+  background-color: #6997e3;
+  color: white;
+}
+
+/* Skill bars */
+body.dark-mode .skill-bar {
+  background: #334155;
 }
