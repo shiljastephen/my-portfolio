@@ -1,5 +1,5 @@
-import eventImg from "../images/event.png.png";
-import ecommerceImg from "../images/ecommerce.png.png";
+import eventImg from "../images/event.png";
+import ecommerce1Img from "../images/ecommerce1.png";
 import "./Projects.css";
 
 function Projects() {
@@ -13,17 +13,17 @@ function Projects() {
            <img src={eventImg} alt="Event Management System" />
            <h3>Event Management System</h3>
            <p>Django-based platform for managing school/organization events with role-based access.</p>
-           <a href="https://github.com/YOUR_USERNAME/event-project" target="_blank" rel="noreferrer">
+           <a href="https://github.com/shiljastephen/PythonProject6New.git" target="_blank" rel="noreferrer">
              View Code
            </a>
          </div>
        </div>
         <div className="projects-container">
          <div className="project-card" data-aos="zoom-in">
-           <img src={ecommerceImg} alt="E-commerce App" />
+           <img src={ecommerce1Img} alt="E-commerce App" />
            <h3>E-Commerce Web App</h3>
            <p>Full-stack shopping application with cart, product management, and order placement.</p>
-           <a href="https://github.com/YOUR_USERNAME/ecommerce-project" target="_blank" rel="noreferrer">
+           <a href="https://github.com/shiljastephen/ocean-ecommerce-app.git" target="_blank" rel="noreferrer">
              View Project
            </a>
           </div>

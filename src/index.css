@@ -6,22 +6,45 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #7af3c2;
-  color: #041640;  
+
+  /* ✅ Background Image */
+  background-image: url("../src/assets/lightbg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: #041640;
   transition: background 0.4s, color 0.3s;
 }
 
+/* Overlay for better readability */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.6);
+  z-index: -1;
+}
+
+/* Links */
 a {
   text-decoration: none;
   color: white;
 }
+
 section {
   padding: 80px 10%;
 }
+
 /* 🌙 DARK MODE */
 body.dark-mode {
-  background: #02272d;
   color: #f9f4f4;
+}
+
+/* Dark overlay */
+body.dark-mode::before {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* Navbar */

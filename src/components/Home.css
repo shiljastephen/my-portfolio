@@ -1,6 +1,14 @@
 .hero {
   text-align: center;
   padding-top: 100px;
+  .hero {
+  background: linear-gradient(
+    135deg,
+    #6dd5ed,
+    #2193b0
+  );
+}
+
 }
 
 /* Light Mode */
