@@ -15,18 +15,45 @@ body {
   background-attachment: fixed;
 
   color: #041640;
-  transition: background 0.4s, color 0.3s;
+  transition: color 0.3s;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-/* Overlay for better readability */
+/* ✨ Animated gradient overlay */
 body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(255, 255, 255, 0.6);
-  z-index: -1;
+
+   background: linear-gradient(
+    -45deg,
+    rgba(108, 187, 47, 0.5),
+    rgba(172, 171, 106, 0.5),
+    rgba(112, 165, 177, 0.5),
+    rgba(228, 134, 105, 0.5)
+  );
+
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+
+  z-index: -2;
+  pointer-events: none;
 }
 
+/* Gradient animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} 
 /* Links */
 a {
   text-decoration: none;
@@ -42,10 +69,18 @@ body.dark-mode {
   color: #f9f4f4;
 }
 
-/* Dark overlay */
 body.dark-mode::before {
-  background: rgba(0, 0, 0, 0.6);
+  background: linear-gradient(
+    -45deg,
+    rgba(2, 39, 45, 0.6),
+    rgba(15, 23, 42, 0.6),
+    rgba(30, 41, 59, 0.6),
+    rgba(1, 47, 69, 0.6)
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
 }
+
 
 /* Navbar */
 body.dark-mode .nav {
@@ -67,4 +102,10 @@ body.dark-mode .project-card {
 /* Skill bars */
 body.dark-mode .skill-bar {
   background: #334155;
+}
+@media (max-width: 768px) {
+  .project-grid {
+    padding: 10px 15px;
+    gap: 20px;
+  }
 }

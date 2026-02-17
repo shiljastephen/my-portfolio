@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 10%;
-  background: rgb(122, 184, 155);
+  background: rgb(114, 190, 162);
   position: sticky;
   top: 0;
 }
@@ -18,7 +18,7 @@
   align-items: center;
   gap: 1px;
   padding: 12px;
-
+  color: #06032d;
 }
 
 .links a:hover {
@@ -27,7 +27,7 @@
 .socials a {
   margin-left: 15px;
   font-size: 20px;
-  color: rgb(255, 255, 255);
+  color: rgb(2, 18, 40);
   transition: 0.3s;
 }
 
@@ -40,10 +40,35 @@
   font-size: 20px;
   margin-left: 12px;
   cursor: pointer;
-  color: white;
+  color: rgb(241, 248, 245);
   transition: 0.3s;
 }
 
 .dark-btn:hover {
   transform: scale(1.2);
+}
+/* 🍏 Apple-style glass card */
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animation */
+.glass-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+body.dark-mode .glass-card {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }

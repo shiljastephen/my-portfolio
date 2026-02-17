@@ -1,10 +1,12 @@
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 10px 30px;
-  max-width: 1100px;
+  gap: 30px;
+  padding: 20px 40px;
+  max-width: 1200px;
   margin: auto;
+  text-align: center;
+  align-items: center;
 }
 
 .projects-container {
@@ -16,19 +18,20 @@
 }
 
 .project-card {
-  background: rgb(107, 174, 157);
-  width: 300px;
+  background: rgb(114, 190, 162);
+  width: 320px;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(180, 74, 74, 0.1);
   transition: all 0.3s ease;
   cursor: pointer;
+   width: 100%;
 }
 
 .project-card img {
   width: 100%;
-  height: 180px;
+  height: 240px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -36,7 +39,7 @@
 /* ✨ HOVER EFFECT */
 .project-card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 30px rgba(42, 41, 41, 0.2);
 }
 
 .project-card h3 {
@@ -52,7 +55,7 @@
   display: inline-block;
   margin-top: 10px;
   padding: 8px 14px;
-  background: #070d49;
+  background: #040a4a;
   color: rgb(252, 247, 247);
   border-radius: 6px;
   text-decoration: none;
@@ -62,4 +65,14 @@
 .project-card a:hover {
   background: #72e1d8;
   color: #070d49;
+}
+body.dark-mode .project-card {
+  background-color: #6997e3;
+  color: white;
+}
+@media (max-width: 768px) {
+  .project-grid {
+    padding: 10px 15px;
+    gap: 20px;
+  }
 }

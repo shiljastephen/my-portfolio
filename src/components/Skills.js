@@ -13,6 +13,7 @@ function Skills() {
 
   return (
     <section data-aos="fade-right" className="skills-section">
+     <div className="glass-card">
       <h1 className="title">Skills</h1>
 
       <div className="skills-grid">
@@ -31,6 +32,7 @@ function Skills() {
           </div>
         ))}
       </div>
+     </div>
     </section>
   );
 }

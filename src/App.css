@@ -18,14 +18,20 @@ body.dark-mode .links a:hover {
   color: #72e1d8;
 }
 
-/* Cards */
+/* Cards
 body.dark-mode .card,
 body.dark-mode .project-card {
-  background-color: #1e293b;
+  background-color: #92c9dedf;
   color: white;
-}
+} */
 
 /* Skill bars background */
 body.dark-mode .skill-bar {
   background: #334155;
+}
+@media (max-width: 768px) {
+  .project-grid {
+    padding: 10px 15px;
+    gap: 20px;
+  }
 }

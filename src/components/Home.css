@@ -1,14 +1,7 @@
 .hero {
   text-align: center;
   padding-top: 100px;
-  .hero {
-  background: linear-gradient(
-    135deg,
-    #6dd5ed,
-    #2193b0
-  );
-}
-
+  
 }
 
 /* Light Mode */
@@ -18,8 +11,9 @@
 }
 
 .hero h2 {
-  color: #4d73f3;
+  color: rgb(114, 190, 162);
   margin-bottom: 20px;
+  -webkit-text-stroke: 1px rgba(4, 2, 33, 0.874);
 }
 
 .hero p {
@@ -28,13 +22,21 @@
 
 /* Dark Mode Adjustments */
 body.dark-mode .hero h2 {
-  color: #6997e3;
+  color: #38bdf8;
 }
 
 body.dark-mode .hero p {
   color: #f9f4f4;
 }
 .hero button {
+  padding: 12px 25px;
+  background: rgb(114, 190, 162);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+} 
+body.dark-mode .hero button {
   padding: 12px 25px;
   background: #38bdf8;
   border: none;
