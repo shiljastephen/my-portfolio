@@ -29,9 +29,4 @@ body.dark-mode .project-card {
 body.dark-mode .skill-bar {
   background: #334155;
 }
-@media (max-width: 768px) {
-  .project-grid {
-    padding: 10px 15px;
-    gap: 20px;
-  }
-}
+

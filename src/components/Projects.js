@@ -1,4 +1,4 @@
-import eventImg from "../images/event.png";
+import event_managementsImg from "../images/event_managements.png";
 import ecommerce1Img from "../images/ecommerce1.png";
 import "./Projects.css";
 
@@ -11,7 +11,7 @@ function Projects() {
         <h1 className="title">Projects</h1>
         {/* Project 1 */}
         <div className="glass-card project-card" data-aos="zoom-out">
-          <img src={eventImg} alt="Event Management System" />
+          <img src={event_managementsImg} alt="Event Management System" />
           <h3>Event Management System</h3>
           <p>
             Django-based platform for managing school/organization events
